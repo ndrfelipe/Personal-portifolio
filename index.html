@@ -3,16 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9e0cddc9f5.js" crossorigin="anonymous"></script>
         <title>Personal portfolio</title>
     </head>
     <body>
-        <header>
+        
+        <div id="header">
+            <div class="barra">
+                <div class="diflex">
+
+                    <a href="#topo"><i class="fa-solid fa-code"></i></a>
+
+                    <nav class="navegacao">
+                        <ul>
+                            <li><a  href="#services">serviços</a></li>
+                            <li><a href="#experience">experiência</a></li>
+                            <li><a href="#educacao">educação</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            
+                        </ul>
+                    </nav>
+
+                    <div class="btn-curriculo">
+                        <a href="document/andre-braga-curriculo.pdf" download target="_blank"><button>Currículo</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header id="topo" class="animate__animated animate__fadeIn">
             <nav class="navbar">
                 <img class="nav-img" src="img/perfil.jpeg">
                 <h3 class="nav-title">André Braga</h3>
-                <p class="nav-subtitle">FrontEnd Developer</p>
+                <p class="nav-subtitle animate__animated animate__flash animate__delay-1s">FrontEnd Developer</p>
                 <ul class="nav-list">
                     <li><a class="nav-item" target="_blank" href="https://github.com/ndrfelipe"><i class="fa-brands fa-github"></i></a></li>
                     <li><a class="nav-item" target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-braga-3b2939263/"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -21,13 +49,14 @@
             </nav>
         </header>
 
-        <div class="container">
-            <section class="content">
+        <div>
+            <section class="content first">
                 <div class="grid">
                     <div id="about">
-                        <h2 class="content-title">About</h2>
+                        <h2 class="content-title">Sobre mim</h2>
                         <p class="content-subtitle">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla, atque delectus ipsa quam deleniti aut obcaecati explicabo iure illo beatae facilis natus pariatur tempore quas illum vero architecto corporis.
+                            Hello, world! </br>
+                            Sou estudante de TI, atualmente cursando Análise e Desenvolvimento de Sistemas na CESAR School. Além disso, estou sempre buscando novos conhecimentos e desafios para me aprimorar na área de tecnologia.
                         </p>
                     </div>
                     <div id="skills">
@@ -51,39 +80,40 @@
                 </div>
             </section>
 
-            <section class="content">
-                <h2 class="content-title">Services</h2>
+            <section class="content first" id="services">
+                <h2 class="content-title">Serviços</h2>
                 <div class="grid">
                     <div class="box-services" id="box1">
                         <i class="fa-solid fa-window-maximize"></i>
-                        <h3 class="services-title">Web development</h3>
+                        <h3 class="services-title">Desenvolvimento web</h3>
                         <p class="services-subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consequatur nesciunt nisi soluta, molestias laborum ex quo perspiciatis
+                            Criação, manutenção e atualização de sites responsivos. Realizar melhorias contínuas, correção de bugs e atualização de conteúdo em websites já existentes
                         </p>
                     </div>
                     <div class="box-services" id="box2">
                         <i class="fa-regular fa-window-restore"></i>
-                        <h3 class="services-title">FrontEnd development</h3>
+                        <h3 class="services-title">Desenvolvimento FrontEnd</h3>
                         <p class="services-subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consequatur nesciunt nisi soluta, molestias laborum ex quo perspiciatis
+                            Projetar e implementar Landing Pages. Consumir APIs para fornecer funcionalidades adicionais ao site e melhorar o desempenho do site por meio de técnicas de otimização de front-end.
+ 
                         </p>
                     </div>
                     <div class="box-services" id="box3">
                         <i class="fa-solid fa-cube"></i>
                         <h3 class="services-title">UI/UX Design</h3>
                         <p class="services-subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure consequatur nesciunt nisi soluta, molestias laborum ex quo perspiciatis
+                            Criar interfaces interativas e dinâmicas usando frameworks como Bootstrap, juntamente com JavaScript para a lógica de interação.
                         </p>
                     </div>
                 </div>
             </section>
-            <section class="content">
+            <section class="content first" id="experience">
                 <h2 class="content-title">Experience</h2>
                 
                     <div class="experience-box">
                         <h4>Frontend Developer</h4>
                         <div class="experience-info">
-                                 <a href="https://institutoidv.org/" target="_blank">Instituto IDV</a>
+                                 <a href="https://institutoidv.org/" target="_blank" >Instituto IDV</a>
                             <p>
                                 Julho 2024 - present
                             </p>
@@ -91,25 +121,19 @@
                         <div class="experience-resume">
                             <ul>
                                 <li> 
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo mollitia minima ipsam similique, veritatis libero nesciunt voluptate qui cumque reprehenderit!</p>
-                                </li>
-                                <li> 
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo mollitia minima ipsam similique, veritatis libero nesciunt voluptate qui cumque reprehenderit!</p>
-                                </li>
-                                <li> 
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo mollitia minima ipsam similique, veritatis libero nesciunt voluptate qui cumque reprehenderit!</p>
+                                    <p>Desenvolvo trabalho voluntário no Instituto IDV, o qual não possui fins-lucrativos e promove a ciência, educação e tecnologia. Meu papel no instituto é de integrar a equipe de tecnologia da informação, sendo responsável por criar, implementar, alimentar e reparar as páginas web do instituto.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
             </section>
-            <section class="content" >
+            <section class="content first" id="educacao">
 
                 <h2 class="content-title">Education</h2>
                 <div id="education">
                     <div class="education-box" id="edu1">
-                        <h4>Academic Education</h4>
+                        <h4>Educação acadêmica</h4>
                         <div class="education-info">
                              <p>Análise e Desenvolvimento de Sistemas</p>
                              <p>
@@ -122,14 +146,14 @@
                         <div class="education-resume">
                             <ul>
                                 <li> 
-                                    <p>Skills: Web development, JavaSript, UI/UX design, Git, Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                                    <p>A graduação tecnológica em Análise e Desenvolvimento de Sistemas capacita profissionais para analisar, projetar, testar e implementar sistemas computacionais e software. </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="education-box" id="edu2">
-                        <h4>Certification</h4>
+                        <h4>Certificados</h4>
                         <div class="education-resume">
                             <ul>
                                 <li> 
@@ -141,9 +165,7 @@
                                 <li> 
                                     <p>Git</p>
                                 </li>
-                                <li> 
-                                    <p>Python - Udemy</p>
-                                </li>
+                               
                                 <li> 
                                     <p>Lógica de programação - Udemy</p>
                                 </li>
@@ -152,11 +174,11 @@
                     </div>
                 </div>
             </section>
-            <section class="content portfolio">
-                <h2 class="content-title">
+            <section class="content first" id="portfolio">
+                <h2 class="content-title" >
                     Portfolio
                 </h2>
-                <div class="grid-project">
+                <div class="grid">
                     <a href="https://codepen.io/aandrelipe/pen/GRbZWGv?editors=1100" class="project project-tile" target="_blank ">
                         <img src="img/tribute-stephen.png" alt="" class="project-img" alt="">
                         <p class="project-title">
@@ -165,8 +187,8 @@
                             </span>
                         </p>
                     </a>
-                    <a href="#" class="project project-tile">
-                        <img src="img/gentech.png" alt="" class="project-img" alt="">
+                    <a href="https://github.com/ndrfelipe/projetoIntegrador/tree/main" class="project project-tile" target="_blank">
+                        <img src="img/sst1.png" alt="" class="project-img" alt="">
                         <p class="project-title">
                             <span class="code">
                                 SST Calculator
@@ -181,42 +203,48 @@
                             </span>
                         </p>
                     </a>
-
-                    
                     
                 </div>
+
+                <div class="portvermais">
+                    <a href="https://github.com/ndrfelipe" target="_blank">
+                        <button>ver mais</button>
+                    </a>
+                </div>
             </section>
-            <section class="content portfolio last">
+            <section class="content first last" id="contacts">
                 <h2 class="content-title">Contacts</h2>
-                <div class="grid-contact">
+                <div class="grid">
                     <a class="contact-box contact1" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
                         
                         <i class="fa-regular fa-envelope"></i>
-                        ndrfelipebraga@gmail.com/
+                        lipethedev@gmail.com
                     
                     </a>
                     
                     <a class="contact-box contact2" href="https://www.linkedin.com/in/andr%C3%A9-braga-3b2939263/" target="_blank">
                         
                         <i class="fa-brands fa-linkedin-in"></i>
-                        https://www.linkedin.com/in/andre-braga/
+                        https://www.linkedin.com/andre-braga
                     
                     </a>
                     <a class="contact-box contact3" href="https://github.com/ndrfelipe" target="_blank">
                         
                         <i class="fa-brands fa-github"></i>
-                        https://github.com/ndrfelipe/
+                        https://github.com/ndrfelipe
                     
                     </a>
                     
                     <a class="contact-box contact4" href="https://www.instagram.com/aandrelipe/" target="_blank">
                         
                             <i class="fa-brands fa-instagram"></i>
-                            https://www.instagram.com/aandrelipe/
+                            https://www.instagram.com/aandrelipe
                         
                     </a>
                 </div>
             </section>
         </div>
+
+        <script src="menu.js"></script>
     </body>
 </html>
