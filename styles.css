@@ -214,6 +214,7 @@ header{
 
 .first{
     margin-top: 6rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .grid{
@@ -396,6 +397,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
 }
 
 .experience-box h4{
@@ -488,11 +490,12 @@ header{
     background-color: #1f1f1f;
     border: 1px solid #00000057;
     padding: 2rem;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     
 }
+
+
 
 #edu1{
     grid-column: 1 / 2;
