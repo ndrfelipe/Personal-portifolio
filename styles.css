@@ -583,7 +583,13 @@ header{
         grid-gap: 1rem;
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid-project {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas a partir de 768px */
+    }
 }
 
 @media screen and (max-width: 1024px) {
